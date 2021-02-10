@@ -107,13 +107,15 @@ vocoder_model.eval()
 
 import IPython
 from IPython.display import Audio
+#until here the script is from: https://colab.research.google.com/drive/1u_16ZzHjKYFn1HNVuA4Qf_i2MMFB9olY?usp=sharing#scrollTo=f-Yc42nQZG5A
 
+#The loop that allows for file processing
 
 import librosa as lb
 regex = re.compile('^[A-Za-z0-9]*$')
 
 ignore_these = ""
-in_file_location = "in"
+in_file_location = "batch/in"
 list_files = os.listdir(in_file_location)
 
 import signal
