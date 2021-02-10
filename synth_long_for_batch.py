@@ -115,7 +115,8 @@ import librosa as lb
 regex = re.compile('^[A-Za-z0-9]*$')
 
 ignore_these = ""
-in_file_location = "batch/in"
+in_file_location = "batch/in" #change me to your input file
+out_path = "batch/out" #change me to your output path
 list_files = os.listdir(in_file_location)
 
 import signal
@@ -156,7 +157,7 @@ for files in list_files:
                     if sentence_to_filter.islower() and (len(sentence_len_filter) >= min_len_sentence ):
                         print(sentence)
                         print(str(i) + ".wav")
-                        temp_path = "/Documents/TTS/tacotron/batch/out"
+                        temp_path = out_path
                         if not os.path.exists(temp_path+"/"+ files):
                             os.mkdir(temp_path+"/"+ files)
                         out_path = temp_path +"/"+ files+"/"+ str(i) + ".wav"
