@@ -1,3 +1,7 @@
+
+------------- THIS VERSION OF TTS IS DISCONTINUED --------- PLEASE REFER TO UPDATED VERSION HERE: https://github.com/OlafKranse/coqui-ai_tts_for_documents
+
+
 Tested on Ubuntu 20.0.4 subsystem for windows, using python 3.8 .
 
 The script uses Neural TTS by mozilla; https://github.com/mozilla/TTS
